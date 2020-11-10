@@ -1,5 +1,9 @@
 let getFromLocalStorage = function() {
-    let messages = localStorage.getItem(document.querySelector('.selected').textContent).split(',');
+    let items = localStorage.getItem(document.querySelector('.selected').textContent);
+    if (items == null) {
+        return
+    }
+    let messages = items.split(',');
     let parent = document.querySelector('.messages');
     for (let i = 0; i < messages.length; ++i) {
         let message = document.createElement('div');
