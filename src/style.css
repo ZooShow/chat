@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.dialoges,
+.messages {
+    float: left;
+}
+
+.dotted {
+    border: 1px dotted blue;
+}
+
+.dialoges {
+    width: 20vw;
+    height: calc(100vh - 2px);
+    overflow-y: auto;
+}
+
+.dialoge {
+    list-style-type: none;
+    margin-left: 0;
+    border-bottom: 1px solid grey;
+    height: 40px;
+    overflow: auto auto;
+    text-align: center;
+    padding: 10px;
+    transition: .1s all ease-in-out;
+}
+
+.dialoge>img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.selected {
+    background-color: #cccccc;
+}
+
+.messages {
+    width: 77vw;
+    height: calc(100vh - 40px);
+    background-color: #efebe2;
+    backdrop-filter: blur(100px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    overflow: auto auto;
+}
+
+.message-box {
+    background-color: #ebdfc2;
+    height: 40px;
+    margin-left: 20vw;
+    width: 77vw;
+    border: 1px solid gray;
+    box-shadow: 0 0 10px gray;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+textarea {
+    outline: none;
+    width: 90%;
+    resize: none;
+    overflow: auto;
+    padding-left: 10px;
+    padding-top: 5px;
+    border-radius: 20px;
+}
+
+.send {
+    border: none;
+    outline: none;
+}
+
+.message {
+    background-color: white;
+    border: 10px solid white;
+    margin-bottom: 10px;
+    margin-right: 2px;
+    border-radius: 10px 0 10px 10px;
+    box-shadow: 0 0 10px black;
+}
